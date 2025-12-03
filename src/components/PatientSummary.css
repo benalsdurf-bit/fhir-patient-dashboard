@@ -1,0 +1,245 @@
+.patient-summary {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.back-button {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover {
+  background: #5568d3;
+}
+
+.demographics {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.demographics h1 {
+  margin: 0 0 1rem 0;
+  color: white;
+}
+
+.demographics strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.demo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.patient-summary section {
+  margin-bottom: 2rem;
+}
+
+.patient-summary h2 {
+  color: #333;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+}
+
+/* Conditions */
+.condition-list {
+  list-style: none;
+  padding: 0;
+}
+
+.condition-list li {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border-left: 4px solid #667eea;
+}
+
+.condition-list li strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.onset {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Medications */
+.med-list {
+  list-style: none;
+  padding: 0;
+}
+
+.med-list li {
+  background: #f5f5f5;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  border-left: 4px solid #764ba2;
+}
+
+.med-list li strong {
+  color: #333;
+  font-weight: 600;
+}
+
+.dosage {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Lab Results Table */
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  overflow-x: auto;
+  display: block;
+}
+
+.results-table thead,
+.results-table tbody,
+.results-table tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.results-table th {
+  background: #f5f5f5;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+  color: #333;
+}
+
+.results-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  color: #333;
+}
+
+.results-table tr:hover {
+  background: #fafafa;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.status.h,
+.status.high {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.status.l,
+.status.low {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.status.n,
+.status.normal {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Vital Signs */
+.vitals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.vital-card {
+  background: #f5f5f5;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e0e0e0;
+}
+
+.vital-name {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.vital-value {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #667eea;
+  margin-bottom: 0.5rem;
+}
+
+.vital-date {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.error {
+  color: #d32f2f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .patient-summary {
+    padding: 1rem;
+  }
+  
+  .demographics {
+    padding: 1rem;
+  }
+  
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .vitals-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .results-table {
+    font-size: 0.9rem;
+  }
+  
+  .results-table th,
+  .results-table td {
+    padding: 0.5rem;
+  }
+}

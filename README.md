@@ -144,19 +144,6 @@ CSS Grid for adaptive layouts that work on any screen size.
 - [ ] Export patient summary to PDF
 - [ ] SMART on FHIR authentication
 
-## 📝 Interview Talking Points
-
-**For Healthcare Tech Companies:**
-- Demonstrates understanding of FHIR R4 standard
-- Shows ability to work with clinical terminologies (SNOMED, ICD-10, LOINC, RxNorm)
-- Clean architecture with service layer pattern
-- Real-world healthcare data workflows
-
-**For Tech Companies:**
-- Modern React patterns (hooks, component composition)
-- Async/await and parallel data fetching
-- RESTful API integration
-- Responsive design implementation
 
 ## 🤝 Contributing
 
@@ -168,11 +155,7 @@ MIT License - feel free to use this code for your own projects.
 
 ## 👤 Author
 
-**Your Name**
-- LinkedIn: [Your LinkedIn]
-- Portfolio: [Your Website]
-- Email: your.email@example.com
-
+Ben ALsdurf
 ---
 
 Built with React + HAPI FHIR Server | Data: Synthea Synthetic Patients
